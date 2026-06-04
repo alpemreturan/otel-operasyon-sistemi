@@ -19,6 +19,44 @@ Bu yapı sayesinde tüm operasyon süreçleri dijital, güvenli ve daha verimli 
 
 ---
 
+# 📸 Ekran Görüntüleri
+
+**Giriş Ekranı**
+<br><br>
+<img width="1318" height="1059" alt="Ekran görüntüsü 2026-06-04 210550" src="https://github.com/user-attachments/assets/9788a45e-e078-4f9e-9e6c-131b97f79609" />
+<br><br>
+**Yönetici Paneli ve Bazı Önemli Özellikleri**
+<br><br>
+<img width="1240" height="913" alt="Ekran görüntüsü 2026-06-04 210601" src="https://github.com/user-attachments/assets/48937c79-c5cb-4820-b6cc-e87cba29d7ed" />
+<br><br>
+<img width="817" height="645" alt="Ekran görüntüsü 2026-06-04 210645" src="https://github.com/user-attachments/assets/5d62165a-8642-4c82-b803-3115fe3b97e7" />
+<br><br>
+<img width="803" height="345" alt="Ekran görüntüsü 2026-06-04 210649" src="https://github.com/user-attachments/assets/148296bd-1ad6-4257-86c6-d6dc357a95c7" />
+<br><br>
+<img width="801" height="767" alt="Ekran görüntüsü 2026-06-04 210654" src="https://github.com/user-attachments/assets/10b2647b-5393-4e36-993b-a5257cfe3913" />
+<br><br>
+<img width="813" height="648" alt="Ekran görüntüsü 2026-06-04 210749" src="https://github.com/user-attachments/assets/b6855ca3-5d19-43ae-880a-fc2eacd8da8d" />
+<br><br>
+**Resepsiyon Paneli ve Bazı Önemli Özellikleri**
+<br><br>
+<img width="967" height="645" alt="Ekran görüntüsü 2026-06-04 210816" src="https://github.com/user-attachments/assets/c84eaa0d-f616-4140-89f8-bd08184d2313" />
+<br><br>
+<img width="811" height="186" alt="Ekran görüntüsü 2026-06-04 212734" src="https://github.com/user-attachments/assets/f57eaae0-3803-4f4f-ba07-5063a7e66804" />
+<br><br>
+<img width="807" height="697" alt="Ekran görüntüsü 2026-06-04 212740" src="https://github.com/user-attachments/assets/54d795f4-c851-4647-a923-c361b45f36fb" />
+<br><br>
+<img width="803" height="686" alt="Ekran görüntüsü 2026-06-04 212744" src="https://github.com/user-attachments/assets/518e7a87-c454-4aa4-9d4b-f0ec6e925e48" />
+<br><br>
+**Kat Görevlisi Paneli**
+<br><br>
+<img width="1040" height="313" alt="Ekran görüntüsü 2026-06-04 210944" src="https://github.com/user-attachments/assets/18c5ea71-c6b9-4a01-ae65-77cc720f31da" />
+<br><br>
+**Müşteri Ekranı**
+<br><br>
+<img width="946" height="395" alt="Ekran görüntüsü 2026-06-04 210928" src="https://github.com/user-attachments/assets/f713e638-7f52-4a7b-b123-9b4aaa441e68" />
+<br><br>
+---
+
 # ✨ Özellikler
 
 ## 👤 Müşteri Özellikleri
