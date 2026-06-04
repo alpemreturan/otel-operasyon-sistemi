@@ -275,7 +275,7 @@ yer almaktadır.
 | Üye |
 |---|
 | EMRE TURAN |
-| ONUR KOCA |
+| ONUR ÖNDEŞ |
 | BERAT HATİNOĞLU |
 | AHMET TALHA TÜRKAN |
 | YİĞİT EFE DEMİRCİOĞLU |
