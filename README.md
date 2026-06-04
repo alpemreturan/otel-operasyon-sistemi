@@ -19,6 +19,12 @@ Bu yapı sayesinde tüm operasyon süreçleri dijital, güvenli ve daha verimli 
 
 ---
 
+# 📹 Lansman Videosu
+
+https://github.com/user-attachments/assets/551f19e1-1ced-4c28-90c7-f86986b5da85
+
+---
+
 # 📸 Ekran Görüntüleri
 
 **Giriş Ekranı**
