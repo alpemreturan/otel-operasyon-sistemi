@@ -279,3 +279,52 @@ Sistemi yerel geliştirme ortamınızda sorunsuz bir şekilde kurmak ve bağıml
 ```
 3. **Veri Tabanının Hazırlanması:**
    Herhangi bir SQL scripti çalıştırmanıza gerek yoktur. Sistem ilk kez başlatıldığında database.py modülü otomatik olarak devreye girerek ana dizinde otel.db SQLite dosyasını oluşturur; şemaları hazırlar ve     test süreçleri için gerekli olan lookup tablolarını (roller, odalar, örnek kullanıcılar) içerisine enjekte (seed) eder.
+   
+---
+
+## 🚀 Çalıştırma Adımları
+
+Proje yapısı gereği tek bir veri tabanı ve iş mantığı çekirdeğini (services.py) paylaşan üç farklı arayüz sunmaktadır. İhtiyacınıza göre ilgili komutu ana dizindeyken terminalinizde yürütmeniz yeterlidir:
+
+**1. Seçenek: Konsol Arayüzünü (CLI) Başlatma**
+
+Metin tabanlı, hafif ve hızlı çalışan tüm rol menülerini (Yönetici, Resepsiyon, Kat Görevlisi, Müşteri) terminal üzerinden test etmek için:
+```bash
+   python main.py
+```
+
+**2. Seçenek: Masaüstü Yönetim Panelini (GUI) Başlatma**
+
+Yönetici raporlama ekranları, resepsiyonist oda atama pencereleri ve kat görevlisi panellerini içeren CustomTkinter tabanlı gelişmiş masaüstü uygulamasını çalıştırmak için:
+```bash
+   python gui.py
+```
+
+**3. Seçenek: Flask REST API Sunucusunu ve Web Arayüzünü Başlatma(Tavsiye Edilen)**
+
+Müşterilerin oda kapısı açma, süreli QR kod üretme ve dijital oda servisi/temizlik talebi gönderme süreçlerini içeren mobil uyumlu web platformunu ayağa kaldırmak için:
+```bash
+   python api_server.py
+```
+Sunucu başarıyla başladıktan sonra herhangi bir modern web tarayıcısından http://127.0.0.1:5000/ adresine giderek arayüze erişebilirsiniz.
+
+---
+
+## 📂 Klasör Yapısı
+
+Projenin temiz kod (clean code) prensiplerine uygun, sorumlulukların ayrılması (Separation of Concerns) ilkesini gözeten dizin hiyerarşisi aşağıdaki gibidir:
+
+```text
+otel_operations/
+└── otel_sistemi/
+    ├── database.py         # SQLite3 bağlantı yönetimi, tablo şemaları ve seed verileri
+    ├── services.py         # Çekirdek iş mantığı, CRUD fonksiyonları, şifre hashleme ve loglama
+    ├── main.py             # Konsol tabanlı (CLI) rol menüleri ve terminal simülasyonu
+    ├── gui.py              # CustomTkinter ile kodlanmış pencereli masaüstü uygulaması
+    ├── api_server.py       # Flask REST API uç noktaları (Endpoints) ve web sunucu yönetimi
+    ├── otel.db             # Uygulama çalıştığında otomatik oluşan ilişkisel SQLite veri tabanı dosyası
+    ├── static/             # Web frontend platformuna ait statik varlıklar (Assets)
+    │   ├── app.js          # REST API ile asenkron (Fetch) haberleşen istemci kontrol kodları
+    │   └── style.css       # Mobil ve tablet cihazlarla uyumlu responsive arayüz stil dosyası
+    └── templates/          # Flask mimarisine uygun HTML şablonları
+        └── index.html      # Müşteri işlemlerini ve web giriş ekranını barındıran ana sayfa
