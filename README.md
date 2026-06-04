@@ -249,18 +249,33 @@ yer almaktadır.
 
 ---
 
-# 📄 Dokümantasyon
+## 🛠️ Kullanılan Teknolojiler
 
-Bu proje kapsamında detaylı olarak:
+Projenin hem masaüstü, hem konsol hem de web tabanlı arayüzlerini destekleyen esnek ve katmanlı mimarisi için aşağıdaki teknolojiler, kütüphaneler ve protokoller kullanılmıştır:
 
-- Fonksiyonel Gereksinimler
-- Fonksiyonel Olmayan Gereksinimler
-- İş Kuralları
-- Veri Tabanı Tasarımı
-- UML Diyagramları
-- Wireframe Tasarımları
-- Proje Planlaması
-
-dokümante edilmiştir.
+* **Temel Programlama Dilleri:** Python 3.x ve JavaScript (ES6+).
+* **Masaüstü Arayüzü (GUI):** `CustomTkinter` (Gelişmiş Python Tkinter kütüphanesi kullanılarak, modern ve işletim sistemi temasına otomatik uyum sağlayan pencereli bir arayüz geliştirilmiştir).
+* **Web Backend & REST API:** `Flask` mikro çerçevesi (microframework) kullanılarak tüm arayüzlerin ortak tüketebileceği servis uç noktaları (endpoints) yazılmıştır. Tarayıcı tabanlı erişim güvenliği için `Flask-CORS` entegrasyonu sağlanmıştır.
+* **Web Frontend:** Mobil öncelikli (responsive) tasarıma sahip `HTML5`, `CSS3` ve API servisleriyle asenkron haberleşmeyi sağlayan modern `JavaScript`.
+* **Veri Tabanı Mimarisi:** `SQLite3` (İlişkisel Veri Modeli). Hafif, taşınabilir ve gömülü yapısı tercih edilmiş; veri bütünlüğü yabancı anahtarlar (Foreign Keys) ve kısıtlamalarla optimize edilmiştir.
+* **Güvenlik Katmanı:** Kullanıcı şifreleri veri tabanında açık metin olarak değil, tek yönlü kriptografik `SHA-256` hashleme teknolojisiyle maskelenerek saklanmaktadır. Rol Tabanlı Yetkilendirme (RBAC) mekanizması entegre edilmiştir.
 
 ---
+
+## 💾 Kurulum Adımları
+
+Sistemi yerel geliştirme ortamınızda sorunsuz bir şekilde kurmak ve bağımlılıkları hazırlamak için aşağıdaki adımları sırasıyla uygulayınız:
+
+1. **Projeyi Klonlayın:**
+   Öncelikle projeyi GitHub üzerinden bilgisayarınıza indirin ve ilgili proje dizinine geçiş yapın:
+```bash
+   git clone [https://github.com/kullanici_adi/otel_operations.git](https://github.com/kullanici_adi/otel_operations.git)
+   cd otel_operations/otel_sistemi
+```
+2. **Gerekli Bağımlılıkları / Kütüphaneleri Yükleyin:**
+   Sistemde kullanılan harici Python kütüphanelerini paket yöneticisi (pip) aracılığıyla terminalinizde yükleyin:
+```bash
+   pip install flask flask-cors customtkinter
+```
+3. **Veri Tabanının Hazırlanması:**
+   Herhangi bir SQL scripti çalıştırmanıza gerek yoktur. Sistem ilk kez başlatıldığında database.py modülü otomatik olarak devreye girerek ana dizinde otel.db SQLite dosyasını oluşturur; şemaları hazırlar ve     test süreçleri için gerekli olan lookup tablolarını (roller, odalar, örnek kullanıcılar) içerisine enjekte (seed) eder.
