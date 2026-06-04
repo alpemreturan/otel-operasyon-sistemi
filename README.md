@@ -228,12 +228,13 @@ yer almaktadır.
 
 # 👥 Ekip Üyeleri
 
-| Üye | Sorumluluk |
-|---|---|
-| Beril - Deniz | Gereksinim Analizi |
-| Zeynep | Veri Tabanı Tasarımı |
-| Tuğba | UML Diyagramları |
-| Umut | Arayüz Tasarımı |
+| Üye |
+|---|
+| EMRE TURAN |
+| ONUR KOCA |
+| BERAT HATİNOĞLU |
+| AHMET TALHA TÜRKAN |
+| YİĞİT EFE DEMİRCİOĞLU |
 
 ---
 
