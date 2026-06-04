@@ -10,7 +10,7 @@ Otel Operasyon Sistemi; otel içerisindeki rezervasyon, konaklama, oda yönetimi
 
 Sistem aşağıdaki kullanıcı rollerini desteklemektedir:
 
-- 👤 Müşteri
+- 👤 Müşteri.
 - 🧑‍💼 Resepsiyonist
 - 🧹 Kat Görevlisi
 - 🧑‍💻 Otel Müdürü
